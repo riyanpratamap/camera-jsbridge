@@ -31,7 +31,7 @@ document.getElementById('captureButton').addEventListener('click', function() {
           document.getElementById('previewImage').src = image;
           
           // Pass the image data to the iOS app using JSBridge (replace 'yourImageKey' with your key)
-          JSBridge.call('yourImageKey', image);
+          JSBridge.call('receiveImage', image);
         });
       })
       .catch(function(error) {
